@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: 运行 XRobot Demo",
+            "type": "debugpy",
+            "request": "launch",
+            // 指定要运行的主文件
+            "program": "${workspaceFolder}/XRobot/demos/main.py",
+            "console": "integratedTerminal",
+            // 关键：在这里设置 PYTHONPATH 环境变量
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"                // ${workspaceFolder} 会自动替换为您的项目根目录
+            },
+            
+        }
+    ]
+}
